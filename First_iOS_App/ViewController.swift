@@ -7,15 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameLbl: UILabel!
     
-    @IBOutlet weak var pressBtn: UIButton!
+    @IBOutlet weak var inputTextField: UITextField!
+   @IBOutlet weak var pressBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //setPropertiesToLabel()
+        self.inputTextField.delegate = self;
+        self.inputTextField.becomeFirstResponder();
+        
     }
     
     func setPropertiesToLabel(){
@@ -27,8 +33,12 @@ class ViewController: UIViewController {
     @IBAction func changeBgColor(_ sender: UIButton) {
         setPropertiesToLabel();
         self.view.backgroundColor = UIColor.green;
+        self.nameLbl.text = self.inputTextField.text;
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
     
 }
 
@@ -38,6 +48,10 @@ class ViewController: UIViewController {
  
  1. label properties
  2. button properties
- 3. set button bg color random
+ 
+ //3. alpha
+ //4 .number
+ //5. 30 max
+ 
  
  */
