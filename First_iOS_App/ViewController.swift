@@ -40,18 +40,72 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true;
     }
     
+    @IBAction func navigateToLogin(_ sender: UIButton) {
+        //source -> self
+        //Destination -> LoginViewController
+        print(self.navigationController);
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if   let loginController = storyboard.instantiateViewController(withIdentifier: "LOGIN_ID") as? LoginViewController {
+            self.navigationController?.pushViewController(loginController, animated: true);
+        }
+    
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == inputTextField {
+            let charctersSet = CharacterSet(charactersIn: "0123456789@!").inverted;
+            //charcters
+            if string.rangeOfCharacter(from: charctersSet) != nil {
+               return false
+            }
+        }
+      
+        return true;
+    }
+    
 }
 
 /*
  
  View Controll life cycle
  
- 1. label properties
+ 1. label properties//
  2. button properties
  
  //3. alpha
  //4 .number
  //5. 30 max
+ //6. class defination, create any class with 5 properties and create 2 instance function and onn class function
+ 
+ //7. What is diff b/t instance and class function
+ //8. class and struct diff
+ //9. read about inheritance
+ //10. method overriding
+ 
+ //11. a) 1->2->3->4->5, b)  5-4, c)  5-3, d) 5-1
+ 
+ /*
+  
+  1.
+  name : 30
+  name : only a-z
+  
+  2.
+  
+  phone : only numbers
+  
+  3.
+  
+  height:
+  5.6
+  
+  
+  */
+ 
+ //Navigation
+ //source destionation
+ 
+ //one screen to another screen
+ 
  
  
  */
