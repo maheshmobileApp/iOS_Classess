@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yl6-dv-HDe">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="VIEW_INTIAL" id="BYZ-38-t0r" customClass="ViewController" customModule="First_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello iOS jsdas kjkkffjokas opasfjkopfjoapf ffkojapfjosaf jofosjafofjoasjoakosdffajs kpodaskof jkpafjkosa fasas jkfsakod jfa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdZ-P3-9JO">
@@ -23,8 +23,28 @@
                                 <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-2p-qWs">
+                                <rect key="frame" x="88" y="169" width="189" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Aap-aF-SV9"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7S-12-EYH">
+                                <rect key="frame" x="166.33333333333334" y="436.33333333333331" width="95.333333333333343" height="53.666666666666686"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="33"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="navigateToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Drs-21-h3s"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-qi-aX2">
-                                <rect key="frame" x="119" y="262" width="152" height="34"/>
+                                <rect key="frame" x="276" y="211" width="152" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
@@ -35,32 +55,16 @@
                                     <action selector="changeBgColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ3-gZ-xQZ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-2p-qWs">
-                                <rect key="frame" x="88" y="169" width="189" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Aap-aF-SV9"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7S-12-EYH">
-                                <rect key="frame" x="119" y="342" width="152" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Push" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="33"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="navigateToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Drs-21-h3s"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="V7S-12-EYH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NoY-pb-nOy"/>
+                            <constraint firstItem="V7S-12-EYH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yFL-TQ-qgm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yYR-dz-pcH"/>
+                    <size key="freeformSize" width="428" height="926"/>
                     <connections>
                         <outlet property="inputTextField" destination="0Nd-2p-qWs" id="giN-Ej-805"/>
                         <outlet property="nameLbl" destination="PdZ-P3-9JO" id="jhK-r2-Hkg"/>
@@ -76,7 +80,7 @@
             <objects>
                 <viewController storyboardIdentifier="LOGIN_ID" id="AYw-Km-5vN" customClass="LoginViewController" customModule="First_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4bD-oM-1dI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kag-KX-jwH">
@@ -95,6 +99,15 @@
                                     <action selector="backAction:" destination="AYw-Km-5vN" eventType="touchUpInside" id="LcD-s8-ivI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-f8-6QF">
+                                <rect key="frame" x="74" y="164" width="242" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push to second"/>
+                                <connections>
+                                    <action selector="pushToSecond:" destination="AYw-Km-5vN" eventType="touchUpInside" id="2gP-He-kqz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bUc-Th-Fmg"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -102,7 +115,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oP-C4-Fqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.0434782608696" y="-307.36607142857139"/>
+            <point key="canvasLocation" x="883" y="-335"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="qSb-dQ-ZCK">
+            <objects>
+                <viewController storyboardIdentifier="SECOND" id="sH8-oU-ior" customClass="SecondViewController" customModule="First_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c5T-u0-jrB">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-fn-4XK">
+                                <rect key="frame" x="126" y="318" width="165" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push to third"/>
+                                <connections>
+                                    <action selector="pushToThird:" destination="sH8-oU-ior" eventType="touchUpInside" id="aEo-uo-rHg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1jB-XN-x7x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hl4-3u-Jbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.7101449275365" y="-346.20535714285711"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="YQ6-Rg-UWd">
+            <objects>
+                <viewController storyboardIdentifier="THIRD" id="tfu-yE-sO6" customClass="ThirdViewController" customModule="First_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWF-iL-2Uv">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdL-S1-4LV">
+                                <rect key="frame" x="138" y="406" width="105" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to First"/>
+                                <connections>
+                                    <action selector="backToRoot:" destination="tfu-yE-sO6" eventType="touchUpInside" id="HDj-xO-YOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nge-Hm-ppc">
+                                <rect key="frame" x="152" y="534" width="111" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back to Login"/>
+                                <connections>
+                                    <action selector="backToLogin:" destination="tfu-yE-sO6" eventType="touchUpInside" id="DJE-96-nu4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aAn-n8-9NC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKX-jv-NdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="-411"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCK-Br-3X7">
@@ -110,7 +184,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yl6-dv-HDe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fit-04-PAy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -124,6 +198,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

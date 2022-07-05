@@ -82,7 +82,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
  //10. method overriding
  
  //11. a) 1->2->3->4->5, b)  5-4, c)  5-3, d) 5-1
- 
+ //push
+ //popview- one step back
+ //poptorootview - navigate origin(root)
+ //poptoviewcontroller-
  /*
   
   1.
@@ -106,6 +109,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
  
  //one screen to another screen
  
+ //1-login-2-3 (a. 3-1, b. 3-login)
+ 
+ 
+ //x---------------
+ //
+     
+ // x- 100
+ //y - 100
+ 
+ //
  
  
  */
