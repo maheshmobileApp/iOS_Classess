@@ -82,6 +82,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
  //10. method overriding
  
  //11. a) 1->2->3->4->5, b)  5-4, c)  5-3, d) 5-1
+ //12 Create simple login screen with email , password and login button. In this button check the textfields. if empty show the alert
+ //13. map,filter,reduce and sor
+ //14. add password validation
  //push
  //popview- one step back
  //poptorootview - navigate origin(root)
@@ -120,5 +123,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
  
  //
  
+ //Position Constraints
+ //TOP
+ //Bottom
+ //left
+ //right
  
+ //Size Constraints
+ 
+ //width
+ //height
+ 
+ //Align Constraints - > (H,V)
+ 
+ 
+ 
+ (top - height/bottom)
+ (bottom - height/top)
+ (height - top/bottom)
+ 
+ 
+ (left -  width/right)
+ (right - width/left)
+ (width - left/right)
+)
  */
