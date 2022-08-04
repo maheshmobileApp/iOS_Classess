@@ -85,6 +85,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
  //12 Create simple login screen with email , password and login button. In this button check the textfields. if empty show the alert
  //13. map,filter,reduce and sor
  //14. add password validation
+ 
+ //14. display the states in tableview
+ //15. create tableview with 5 sections a)sections height : 100,320,45,75,100, b) 1:languages,programmig lan
+        c) show the alert with selected index and sectionn
+ 
+ //16: Download the post man app into your laptop
+ //17: GET vs POST 
+  
+ 
  //push
  //popview- one step back
  //poptorootview - navigate origin(root)
@@ -147,4 +156,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
  (right - width/left)
  (width - left/right)
 )
+ 
+ //Tableview
+ 
+ rows
+ colums
+ 
+ 
+ data-row
+ 
+ names-10
+ 
+ 
+ 
  */

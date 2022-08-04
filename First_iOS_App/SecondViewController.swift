@@ -35,6 +35,8 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
             showAlert(message: "Please Enter Password")
         }else if self.isValidEmail(email: self.emailTextField.text ?? ""){
             self.showAlert(message: "Please Enter Valid Email")
+        }else{
+            
         }
     }
     
@@ -55,6 +57,23 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
         return !emailPred.evaluate(with: email)
     }
     
+    /*
+     func functionName(paramerterName: parameterType,.......) -> returnType {
+     
+     
+     }
+     
+     void
+     
+     */
+    
+    
+    
+//
+//    func <#name#>(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
+//
     /*
      // MARK: - Navigation
      

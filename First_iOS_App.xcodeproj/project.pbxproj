@@ -19,6 +19,11 @@
 		1855F3AF2844F6D200DAE477 /* First_iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F3AE2844F6D200DAE477 /* First_iOS_AppTests.swift */; };
 		1855F3B92844F6D200DAE477 /* First_iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F3B82844F6D200DAE477 /* First_iOS_AppUITests.swift */; };
 		1855F3BB2844F6D200DAE477 /* First_iOS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F3BA2844F6D200DAE477 /* First_iOS_AppUITestsLaunchTests.swift */; };
+		1881E31A2887B44C006D68D1 /* RideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881E3192887B44C006D68D1 /* RideViewController.swift */; };
+		18E029F4288E4B890095F692 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E029F3288E4B890095F692 /* UserListViewController.swift */; };
+		18E029F9288E4E3F0095F692 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E029F7288E4E3F0095F692 /* UserInfoTableViewCell.swift */; };
+		18E029FA288E4E3F0095F692 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E029F8288E4E3F0095F692 /* UserInfoTableViewCell.xib */; };
+		18E080BB289B77CC002656F8 /* ApiRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E080BA289B77CC002656F8 /* ApiRequestViewController.swift */; };
 		287D728BD24887F2A49F2F86 /* Pods_First_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB41E3568F59145C2AF94410 /* Pods_First_iOS_App.framework */; };
 		34D36A0F3F5F2602D7A300EF /* Pods_First_iOS_App_First_iOS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3DB1190042818231EA9AE /* Pods_First_iOS_App_First_iOS_AppUITests.framework */; };
 		D54A2DBFA9F66A86E93A8DCE /* Pods_First_iOS_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA3AE21D46AD8AB7C1ED35 /* Pods_First_iOS_AppTests.framework */; };
@@ -59,6 +64,11 @@
 		1855F3B42844F6D200DAE477 /* First_iOS_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = First_iOS_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1855F3B82844F6D200DAE477 /* First_iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_iOS_AppUITests.swift; sourceTree = "<group>"; };
 		1855F3BA2844F6D200DAE477 /* First_iOS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_iOS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1881E3192887B44C006D68D1 /* RideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideViewController.swift; sourceTree = "<group>"; };
+		18E029F3288E4B890095F692 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		18E029F7288E4E3F0095F692 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		18E029F8288E4E3F0095F692 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		18E080BA289B77CC002656F8 /* ApiRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestViewController.swift; sourceTree = "<group>"; };
 		227C3DC16212DFEDBCE6B9A4 /* Pods-First_iOS_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First_iOS_App.release.xcconfig"; path = "Target Support Files/Pods-First_iOS_App/Pods-First_iOS_App.release.xcconfig"; sourceTree = "<group>"; };
 		31C46BC46600A79934AB8515 /* Pods-First_iOS_App-First_iOS_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First_iOS_App-First_iOS_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-First_iOS_App-First_iOS_AppUITests/Pods-First_iOS_App-First_iOS_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		455D36B4762B0D0EFAB46481 /* Pods-First_iOS_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First_iOS_App.debug.xcconfig"; path = "Target Support Files/Pods-First_iOS_App/Pods-First_iOS_App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,9 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				1855F3972844F6CF00DAE477 /* AppDelegate.swift */,
+				18E029F7288E4E3F0095F692 /* UserInfoTableViewCell.swift */,
+				18E029F8288E4E3F0095F692 /* UserInfoTableViewCell.xib */,
 				1855F3992844F6CF00DAE477 /* SceneDelegate.swift */,
 				1855F39B2844F6CF00DAE477 /* ViewController.swift */,
 				1855F39D2844F6CF00DAE477 /* Main.storyboard */,
+				18E080BA289B77CC002656F8 /* ApiRequestViewController.swift */,
+				18E029F3288E4B890095F692 /* UserListViewController.swift */,
+				1881E3192887B44C006D68D1 /* RideViewController.swift */,
 				184B9B482873EA83008C2C4A /* ThirdViewController.swift */,
 				184B9B462873EA5D008C2C4A /* SecondViewController.swift */,
 				184B9B4428729A5C008C2C4A /* LoginViewController.swift */,
@@ -283,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E029FA288E4E3F0095F692 /* UserInfoTableViewCell.xib in Resources */,
 				1855F3A42844F6D200DAE477 /* LaunchScreen.storyboard in Resources */,
 				1855F3A12844F6D200DAE477 /* Assets.xcassets in Resources */,
 				1855F39F2844F6CF00DAE477 /* Main.storyboard in Resources */,
@@ -382,9 +398,13 @@
 				184B9B4528729A5C008C2C4A /* LoginViewController.swift in Sources */,
 				1855F39C2844F6CF00DAE477 /* ViewController.swift in Sources */,
 				1855F3982844F6CF00DAE477 /* AppDelegate.swift in Sources */,
+				18E029F9288E4E3F0095F692 /* UserInfoTableViewCell.swift in Sources */,
+				18E029F4288E4B890095F692 /* UserListViewController.swift in Sources */,
+				18E080BB289B77CC002656F8 /* ApiRequestViewController.swift in Sources */,
 				184B9B472873EA5D008C2C4A /* SecondViewController.swift in Sources */,
 				184B9B492873EA83008C2C4A /* ThirdViewController.swift in Sources */,
 				1855F39A2844F6CF00DAE477 /* SceneDelegate.swift in Sources */,
+				1881E31A2887B44C006D68D1 /* RideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
