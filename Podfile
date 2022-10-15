@@ -6,7 +6,8 @@ target 'First_iOS_App' do
   use_frameworks!
 
   # Pods for First_iOS_App
-
+  pod 'Alamofire', '~> 5.6'
+  pod 'SwiftLoader', '~> 1.0'
   target 'First_iOS_AppTests' do
     inherit! :search_paths
     # Pods for testing
